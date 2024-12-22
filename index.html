@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header"><h1>Taskify</h1></div>
+    <div class="todos">
+      <div class="title">
+        <p>Add your task Title</p>
+        <input id="title" type="text" placeholder="todo" />
+      </div>
+      <div class="description">
+        <p>Add your task Deccription</p>
+        <input id="description" type="text" placeholder="todo description" />
+      </div>
+      <div class="cat">
+        <select name="category" id="category" style="margin-bottom: 10px;">
+          <option value="todo">todo</option>
+          <option value="inProgress">inProgress</option>
+          <option value="UnderReview">Under Review</option>
+          <option value="Finished">Finished</option>
+        </select>
+        <select name="Type" id="type">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="Urgent">Urgent</option>
+        </select>
+      </div>
+      <div class="add">
+        <button id="add">Add</button>
+      </div>
+    </div>
+    <div class="category">
+      <div id="todo">
+        <h3>To Do</h3>
+        <div class="contentBox"></div>
+      </div>
+      <div id="inProgress">
+        <h3>inProgress</h3>
+        <div class="contentBox">
+        
+        </div>
+      </div>
+      <div id="UnderReview">
+        <h3>Under Review</h3>
+        <div class="contentBox"></div>
+      </div>
+      <div id="Finished">
+        <h3>Finished</h3>
+        <div class="contentBox"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
