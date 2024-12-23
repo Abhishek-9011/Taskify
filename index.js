@@ -101,7 +101,10 @@ function drop(event) {
   task.innerHTML = data;
   task.setAttribute("draggable", "true");
   event.target.querySelector(".contentBox").appendChild(task);
-
+  const deleteButton = task.querySelector(".delete");
+  deleteButton.addEventListener("click", function () {
+    task.remove();
+  });
   const originalTask = document.getElementById("dragging");
   if (originalTask) {
     originalTask.remove();
